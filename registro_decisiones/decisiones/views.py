@@ -22,3 +22,7 @@ def login_view(request):
         return render(request, 'login.html', {'error': error})
     
     return render(request, 'login.html')
+from django.shortcuts import render
+
+def menu_principal(request):
+    return render(request, 'menu_principal.html')  # Asegúrate de que la plantilla existe
